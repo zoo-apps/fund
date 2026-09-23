@@ -70,13 +70,13 @@ export default function Home() {
             </p>
 
             {/* Statistics Grid */}
-            <div className="grid grid-cols-3 gap-6 mb-16 animate-fadeIn delay-200">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-16 animate-fadeIn delay-200">
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300"
+                  className="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-4 sm:p-6 text-center hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="text-4xl font-black text-[#667eea] mb-2">
+                  <div className="text-3xl sm:text-4xl font-black text-[#667eea] mb-2">
                     {stat.value}
                   </div>
                   <div className="text-sm text-white/60">{stat.label}</div>
